@@ -1,0 +1,2 @@
+- 单Activity架构
+- Retrofit-建造者模式架构

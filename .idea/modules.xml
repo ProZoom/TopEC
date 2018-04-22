@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TopEC.iml" filepath="$PROJECT_DIR$/TopEC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/top-annotations/top-annotations.iml" filepath="$PROJECT_DIR$/top-annotations/top-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/top-compiler/top-compiler.iml" filepath="$PROJECT_DIR$/top-compiler/top-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/top-core/top-core.iml" filepath="$PROJECT_DIR$/top-core/top-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/top-ec/top-ec.iml" filepath="$PROJECT_DIR$/top-ec/top-ec.iml" />
+    </modules>
+  </component>
+</project>
