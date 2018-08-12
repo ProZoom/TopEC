@@ -1,4 +1,4 @@
-package com.top.top;
+package com.top.topec;
 
 import org.junit.Test;
 

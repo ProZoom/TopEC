@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.top.top.app.Top;
+import com.top.top.net.interceptor.DebugInterceptor;
 
 
 /**
@@ -16,9 +17,11 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         Top.init(this)
-                .withApiHost("http://127.0.0.1:8080/")
+                .withApiHost("http://127.0.0.1/")
                 .withIcon(new FontAwesomeModule())
+                .withInterceptor(new DebugInterceptor("index", R.raw.test))
                 .configure();
     }
 }

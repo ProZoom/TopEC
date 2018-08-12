@@ -1,4 +1,4 @@
-package com.top.top;
+package com.top.topec;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.top.top.test", appContext.getPackageName());
+        assertEquals("com.top.topec.test", appContext.getPackageName());
     }
 }

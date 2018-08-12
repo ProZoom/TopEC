@@ -6,6 +6,8 @@ import com.joanzapata.iconify.Iconify;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import okhttp3.Interceptor;
+
 /**
  * 作者：ProZoom
  * 时间：2018/4/3
@@ -17,6 +19,9 @@ public class Configurator {
     private static final HashMap<Object,Object> TOP_CONFIGS=new HashMap<>();
 
     private static final ArrayList<IconFontDescriptor> ICONS=new ArrayList<>();
+
+    private static final ArrayList<Interceptor> INTERCEPTORS=new ArrayList<>();
+
 
     public Configurator() {
         TOP_CONFIGS.put(ConfigType.CONFIG_READY.name(),false);
@@ -83,5 +88,20 @@ public class Configurator {
     public final Configurator withIcon(IconFontDescriptor descriptor){
         ICONS.add(descriptor);
         return this;
+    }
+
+
+    public final Configurator withInterceptor(Interceptor interceptor){
+        INTERCEPTORS.add(interceptor);
+        TOP_CONFIGS.put(ConfigType.INTERCEPTOR,INTERCEPTORS);
+        return this;
+
+    }
+
+    public final Configurator withInterceptor(ArrayList<Interceptor> interceptors){
+        INTERCEPTORS.addAll(interceptors);
+        TOP_CONFIGS.put(ConfigType.INTERCEPTOR,INTERCEPTORS);
+        return this;
+
     }
 }

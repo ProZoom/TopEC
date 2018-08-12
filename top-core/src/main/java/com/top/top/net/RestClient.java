@@ -190,7 +190,7 @@ public class RestClient {
 
 
     public final void download() {
-        new DownLoadHandler(URL, REQUEST, SUCCESS, FAILURE, IERROR)
+        new DownLoadHandler(URL, REQUEST, DOWNLOAD_DIR,EXTENSION,NAME,SUCCESS, FAILURE, IERROR)
                 .handlerDownload();
     }
 }
